@@ -17,6 +17,10 @@ server.use("/auth",authroute)
 
 const PORT = process.env.PORT || 3002;
 
+app.get('/', (req, res) => {
+    res.send('Backend is running successfully!');
+});
+
 server.listen(PORT, () => {
     console.log('server started on port ' + PORT);
 });
