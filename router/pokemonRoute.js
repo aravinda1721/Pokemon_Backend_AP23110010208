@@ -2,7 +2,7 @@ const {addpokemon,getallpoke,getbyidpoke,updatepoke,deletepoke} = require('../co
 const express = require("express")
 const router = express.Router()
 const multer = require("multer")
-const auth = require('../middleware/authMiddleware')
+const auth = require('../middleware/authMiddleWare')
 
 const storage = multer.diskStorage({
     destination:(req,file,cb)=>{
